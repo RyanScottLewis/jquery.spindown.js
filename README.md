@@ -1,11 +1,6 @@
 *jquery.spindown.js*
 ==================
 ------------------
-## Description
-
-Turn any element into a spindown.
-Fork me and make this better!
-
 ## Usage
     $('.selector').spindown({ animationDuration: 500 });
 
