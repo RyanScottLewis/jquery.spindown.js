@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en-US' xml:lang='en-US' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <script src='jquery.js' type='text/javascript'></script>
+    <script src='jquery.ui.js' type='text/javascript'></script>
+    <script src='jquery.cookie.js' type='text/javascript'></script>
+    <script src='jquery.json.js' type='text/javascript'></script>
+    <script src='jquery.base64.js' type='text/javascript'></script>
+    <script src='jquery.spindown.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+        $(document).ready(function(){
+            $("#expand").spindown();
+            $("#expand-arrow").spindown({
+                openedClass: 'arrow-opened',
+                closedClass: 'arrow-closed'
+            });
+            $("#expand-plusminus").spindown({
+                openedClass: 'plusminus-opened',
+                closedClass: 'plusminus-closed',
+                animationDuration: 500,
+                cookie: false // Will not save the spindown state in a cookie; Will always start closed.
+            });
+        });
+    </script>
+    <style type='text/css'>   
+        li {
+            list-style-image: none;
+            list-style-position: outside;
+            list-style-type: none; }
+        .content {
+            background-color: #eee; }
+        .arrow-opened, .arrow-closed, .plusminus-opened, .plusminus-closed {
+            padding-left: 10px; }
+        .arrow-opened {
+            background: url(images/plusminus_opened.gif) no-repeat left center; }
+        .arrow-closed {
+            background: url(images/plusminus_closed.gif) no-repeat left center; }
+        .plusminus-opened {
+            background: url(images/arrow_opened.gif) no-repeat left center; }
+        .plusminus-closed {
+            background: url(images/arrow_closed.gif) no-repeat left center; }
+        .expandable {
+            background-color: #ddd;  
+            margin-top: 10px; }
+        #expand-plusminus {
+            width: 100px; }
+    </style>
+  </head>
+  <body>
+      <ul>
+        <li id="expand" class="expandable">Click me!</li>
+        <ul class="content">
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+        </ul>
+      </ul>
+      <div id="expand-arrow" class="expandable">Click me!!</div>
+      <div class="content">Some content here</div>
+      <div id="expand-plusminus"  class="expandable">Click me!!!</div>
+      <img src="http://github.com/images/modules/header/logov3.png"></img>
+  </body>
+</html>
