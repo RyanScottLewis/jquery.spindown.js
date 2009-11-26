@@ -6,14 +6,8 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-Array.prototype.includes = function(value){
-    for(var i=0; i < this.length; i++){ if(this[i] === value){ return true; } }
-    return false;// Is this needed?
-};
-Array.prototype.remove = function(value){
-    var i = this.indexOf(value);
-    if(i != -1) this.splice(i, 1);
-};
+Array.prototype.includes=function(value){for(var i=0;i<this.length;i++){if(this[i]===value){return true}}return false};
+Array.prototype.remove=function(value){var i=this.indexOf(value);if(i!=-1)this.splice(i,1)};
 
 (function($){
      $.fn.extend({ 
