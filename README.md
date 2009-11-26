@@ -3,7 +3,7 @@
 ## Usage
     $('.selector').spindown({ animationDuration: 500 });
 
-You must add the jquery.js, jquery.ui.js, jquery.cookie.js, jquery.json.js, and jquery.base64.js libraries to your document before you add the jquery.spindown.js library.
+You must add the jquery.js, jquery.cookie.js, jquery.json.js, and jquery.base64.js libraries to your document before you add the jquery.spindown.js library.
 ## Example
     $(document).ready(function(){
         $(".expandable").spindown();
