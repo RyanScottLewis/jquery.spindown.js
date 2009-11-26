@@ -24,7 +24,6 @@ When 'cookie' is set to true
 ## ToDo
 - Figure out a better way to save in the cookies
     - Right now it saves it by the elements text. There are obvious downfalls to this, such as using elements without text or two elements with the same text
-- Remove dependence on jquery.ui.js
 - Add closedByDefault option
 ## Credits
 Created by Ryan Lewis, released under the MIT License.
