@@ -23,7 +23,7 @@ Array.prototype.remove = function(value){
                 cookieName: 'spindown',
                 cookiePath: '/',
                 cookieExpire: 14,
-                animationDuration: 100,
+                slideSpeed: 100,
                 openedClass: 'opened',
                 closedClass: 'closed'
             };
@@ -56,7 +56,7 @@ Array.prototype.remove = function(value){
                     }else{
                         self.removeClass(options.closedClass); self.addClass(options.openedClass);
                     }
-                    self.next().toggle('blind', {}, options.animationDuration, function(){
+                    self.next().slideToggle(options.slideSpeed, function(){
                         if ( opened.includes(text) ) { /////////////// ToDo: Turn into opened.includes(text) && self.is(":hidden")
                             // If the current child is hidden and found in the 'opened' array, remove it
                             if ( next.is(":hidden") ) { opened.remove(text); }

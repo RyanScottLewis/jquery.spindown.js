@@ -16,7 +16,7 @@ This will turn all of the elements with the class 'expandable' into spindowns, c
     cookieName: 'spindown',
     cookiePath: '/',
     cookieExpire: 14,
-    animationDuration: 100,
+    slideSpeed: 100,
     openedClass: 'opened',
     closedClass: 'closed'
 ### Cookies:
