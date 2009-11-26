@@ -20,7 +20,7 @@ This will turn all of the elements with the class 'expandable' into spindowns, c
     openedClass: 'opened',
     closedClass: 'closed'
 ### Cookies:
-When 'cookie' is set to true
+When 'cookie' is set to true, blah blah blah yadda yadda
 ## ToDo
 - Figure out a better way to save in the cookies
     - Right now it saves it by the elements text. There are obvious downfalls to this, such as using elements without text or two elements with the same text

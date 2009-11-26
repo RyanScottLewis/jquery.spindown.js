@@ -16,7 +16,7 @@
             $("#expand-plusminus").spindown({
                 openedClass: 'plusminus-opened',
                 closedClass: 'plusminus-closed',
-                animationDuration: 500,
+                slideSpeed: 500,
                 cookie: false // Will not save the spindown state in a cookie; Will always start closed.
             });
         });
@@ -31,33 +31,33 @@
         .arrow-opened, .arrow-closed, .plusminus-opened, .plusminus-closed {
             padding-left: 10px; }
         .arrow-opened {
-            background: url(images/plusminus_opened.gif) no-repeat left center; }
-        .arrow-closed {
-            background: url(images/plusminus_closed.gif) no-repeat left center; }
-        .plusminus-opened {
             background: url(images/arrow_opened.gif) no-repeat left center; }
-        .plusminus-closed {
+        .arrow-closed {
             background: url(images/arrow_closed.gif) no-repeat left center; }
+        .plusminus-opened {
+            background: url(images/plusminus_opened.gif) no-repeat left center; }
+        .plusminus-closed {
+            background: url(images/plusminus_closed.gif) no-repeat left center; }
         .expandable {
             background-color: #ddd;  
             margin-top: 10px; }
-        #expand-plusminus {
+        .expand-plusminus {
             width: 100px; }
     </style>
   </head>
   <body>
-      <ul>
-        <li id="expand" class="expandable">Click me!</li>
-        <ul class="content">
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
+        <ul>
+            <li id="expand" class="expandable">Click me!</li>
+            <ul class="content">
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+            </ul>
         </ul>
-      </ul>
-      <div id="expand-arrow" class="expandable">Click me!!</div>
-      <div class="content">Some content here</div>
-      <div id="expand-plusminus"  class="expandable">Click me!!!</div>
-      <img src="http://github.com/images/modules/header/logov3.png"></img>
+        <div id="expand-arrow" class="expandable">Click me!!</div>
+        <div class="content">Some content here</div>
+        <div class="expandable" id="expand-plusminus" style="width: 100px;">Click me!!!</div>
+        <div style="width: 100px;"><img src="http://github.com/images/modules/header/logov3.png"></img></div>
   </body>
 </html>
