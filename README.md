@@ -1,9 +1,9 @@
 *jquery.spindown.js*
 ==================
 ## Usage
+You must add the jquery.js, jquery.cookie.js, and jquery.json.js libraries to your document before you add the jquery.spindown.js library.
     $('.selector').spindown({ slideSpeed: 500 });
 
-You must add the jquery.js, jquery.cookie.js, jquery.json.js, and jquery.base64.js libraries to your document before you add the jquery.spindown.js library.
 ## Example
     $(document).ready(function(){
         $(".expandable").spindown();
@@ -22,8 +22,6 @@ This will turn all of the elements with the class 'expandable' into spindowns, c
 ### Cookies:
 When 'cookie' is set to true, blah blah blah yadda yadda
 ## ToDo
-- Figure out a better way to save in the cookies
-    - Right now it saves it by the elements text. There are obvious downfalls to this, such as using elements without text or two elements with the same text
 - Add closedByDefault option
 ## Credits
 Created by Ryan Lewis, released under the MIT License.

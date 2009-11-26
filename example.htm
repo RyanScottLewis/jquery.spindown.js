@@ -4,7 +4,6 @@
     <script src='jquery.js' type='text/javascript'></script>
     <script src='jquery.cookie.js' type='text/javascript'></script>
     <script src='jquery.json.js' type='text/javascript'></script>
-    <script src='jquery.base64.js' type='text/javascript'></script>
     <script src='jquery.spindown.js' type='text/javascript'></script>
     <script type='text/javascript'>
         $(document).ready(function(){
@@ -17,7 +16,7 @@
                 openedClass: 'plusminus-opened',
                 closedClass: 'plusminus-closed',
                 slideSpeed: 500,
-                cookie: false // Will not save the spindown state in a cookie; Will always start closed.
+                cookie: false
             });
         });
     </script>
@@ -26,22 +25,26 @@
             list-style-image: none;
             list-style-position: outside;
             list-style-type: none; }
+        .expandable {
+            background-color: #ddd;  
+            margin-top: 10px; }
         .content {
             background-color: #eee; }
+        
         .arrow-opened, .arrow-closed, .plusminus-opened, .plusminus-closed {
             padding-left: 10px; }
+        
         .arrow-opened {
             background: url(images/arrow_opened.gif) no-repeat left center; }
         .arrow-closed {
             background: url(images/arrow_closed.gif) no-repeat left center; }
+        
         .plusminus-opened {
             background: url(images/plusminus_opened.gif) no-repeat left center; }
         .plusminus-closed {
             background: url(images/plusminus_closed.gif) no-repeat left center; }
-        .expandable {
-            background-color: #ddd;  
-            margin-top: 10px; }
-        .expand-plusminus {
+        
+        .width-100 {
             width: 100px; }
     </style>
   </head>
@@ -57,7 +60,7 @@
         </ul>
         <div id="expand-arrow" class="expandable">Click me!!</div>
         <div class="content">Some content here</div>
-        <div class="expandable" id="expand-plusminus" style="width: 100px;">Click me!!!</div>
-        <div style="width: 100px;"><img src="http://github.com/images/modules/header/logov3.png"></img></div>
+        <div class="expandable width-100" id="expand-plusminus">Click me!!!</div>
+        <div class="width-100"><img src="http://github.com/images/modules/header/logov3.png"></img></div>
   </body>
 </html>
